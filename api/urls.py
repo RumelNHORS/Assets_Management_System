@@ -21,7 +21,7 @@ router.register('company', views.CompanyCViewSet, basename='company')
 
 
 urlpatterns = [
-    #include rouder
+
     path('', include(router.urls)),
     path('api/register/', RegisterAPI.as_view(), name='register'),
     path('auth/', include('rest_framework.urls', namespace='rest_framework')),
